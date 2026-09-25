@@ -88,7 +88,7 @@ python infer.py
 
 ---
 
-## Google Colab Experimentation (Legacy/Interview Demo)
+## Google Colab Experimentation (Legacy)
 
 For those looking to explore the original experimental setup or run the training pipeline in a hosted GPU environment, the original Google Colab notebook is retained in this repository.
 
