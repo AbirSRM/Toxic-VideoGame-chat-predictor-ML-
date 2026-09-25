@@ -1,0 +1,20 @@
+# Environments
+venv/
+win_venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Data and models (to avoid pushing large or personal files)
+data/
+models/
+
+# Temp files
+tmp/
+*.log

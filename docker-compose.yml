@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  onlyposichat:
+    build: .
+    container_name: onlyposichat
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount models folder so it isn't copied during build, keeping the image small
+      # and allowing host to update models without rebuilding.
+      - ./models:/app/models
+    # GPU support (Requires Docker Compose v1.28.0+ and NVIDIA Container Toolkit)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    environment:
+      - PYTHONUNBUFFERED=1

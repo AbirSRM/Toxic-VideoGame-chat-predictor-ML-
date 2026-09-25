@@ -1,0 +1,23 @@
+# Environment
+venv/
+.env
+
+# Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+
+# Large Files & Data
+models/
+data/
+*.csv
+*.pt
+*.bin
